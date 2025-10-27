@@ -141,28 +141,30 @@ Oblicz i wypisz:
 # """
 
 
-
-prod_A = int(input("podaj liczbę sztuk produktu A: "))
-price_A = float(input("podaj cenę produktu A: "))
-prod_B = int(input("podaj liczbę sztuk produktu B: "))
-price_B = float(input("podaj cenę produktu B: "))
-prod_C = int(input("podaj liczbę sztuk produktu C: "))
-price_C = float(input("podaj cenę produktu C: "))
-
-budget = float(input("Jaki jest dostepny budżet?: "))
-
-total = round(prod_A*price_A + prod_B*price_B + prod_C*price_C , 2)
-prod_sum = prod_A + prod_B + prod_C
-price_not_zero = bool(price_A != 0 and price_B != 0 and price_C != 0)
-
-print(f"łączna wartość koszyka to {total}")
-print(f"suma Większa niż budżet?: {total > budget}")
-print(f"czy istnieje para produktów o tej samej cenie?: {price_A == price_B or price_B == price_C or price_C == price_A}")
-print(f"liczba produktów większa od 10?: {prod_sum > 10}")
-print(f"czy cena żadnego z produktów nie jest równa 0?: {price_A != 0 or price_B != 0 or price_C != 0} ")
-print(f"czy budżet wystarczy i czy żadna cena nie jest zerem?: {budget > total and price_not_zero}")
-print(f"czy jakis produt ejst 2x droższy od innego?: ")
-
+#
+# prod_A = int(input("podaj liczbę sztuk produktu A: "))
+# price_A = float(input("podaj cenę produktu A: "))
+# prod_B = int(input("podaj liczbę sztuk produktu B: "))
+# price_B = float(input("podaj cenę produktu B: "))
+# prod_C = int(input("podaj liczbę sztuk produktu C: "))
+# price_C = float(input("podaj cenę produktu C: "))
+#
+# budget = float(input("Jaki jest dostepny budżet?: "))
+#
+# total = round(prod_A*price_A + prod_B*price_B + prod_C*price_C , 2)
+# prod_sum = prod_A + prod_B + prod_C
+# price_not_zero = bool(price_A != 0 and price_B != 0 and price_C != 0)
+#
+# print(f"łączna wartość koszyka to {total}")
+# print(f"czy suma przekracza budżet?: {total <= budget}")
+# print(f"czy istnieje para produktów o tej samej cenie?: {price_A == price_B or price_B == price_C or price_C == price_A}")
+# print(f"liczba produktów większa od 10?: {prod_sum > 10}")
+# print(f"czy cena żadnego z produktów nie jest równa 0?: {price_not_zero} ")
+# print(f"czy budżet wystarczy i czy żadna cena nie jest zerem?: {budget >= total and price_not_zero}")
+# print(f"czy jakis produt jest 2x droższy od innego?: {price_A >= 2*price_B or price_A >= 2*price_C or
+# price_B >= 2*price_A or price_B >= 2*price_C or
+# price_C >= 2*price_A or price_C >= 2*price_B}")
+#
 
 
 
@@ -191,3 +193,27 @@ Wypisz:
 5) czy cena 1 biletu po zniżce ≤ limit,
 6) warunek złożony: stać na zakup oraz (zniżka ≥15% lub liczba biletów parzysta).
 """
+
+
+# ticket_price = float(input("podaj cenę biletu: "))
+# tickets = int(input("podaj ilość biletów"))
+# discount = float(input("podaj procent zniżki (0-100%): ")) / 100
+# balance = float(input("podaj ile masz kasy w portfelu: "))
+# max_price = float(input("podaj maksymalna akceptowawlną cenę biletu po zniżkach: "))
+#
+# discount_total = ticket_price * tickets * discount
+# total = tickets * ticket_price - discount_total
+# discounted_ticket_price = ticket_price * (1 - discount)
+#
+# print(f"koszt całkowity po zniżce: {total}")
+# print(f"czy zakup mieści się w budżecie: {balance >= total}")
+# print(f"czy zniżka wynosi conajmniej 15%?: {discount >= 0.15}")
+# print(f"czy liczba biletów jest parzysta?: {tickets % 2 == 0}")
+# print(f"czy cena jedego biletu jest akceptowalna?: {max_price >= discounted_ticket_price} ")
+# print(f"czy kupującego stać na zakup oraz czy istnieje znizka >=15% lub liczba biletów jest parzysta: {(balance >= total) and (discount >= 0.15 or tickets % 2 == 0)}")
+#
+
+
+
+
+
